@@ -1,0 +1,21 @@
+{
+  "name": "Flash test",
+  "description": "A flash platform game",
+  "website": "https://github.com/TheprogrammersJD/Flash1",
+  "repository": "https://github.com/TheprogrammersJD/Flash1",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "socket.io",
+    "realtime",
+    "websocket"
+  ],
+  "scripts": {
+  },
+  "addons": [
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
+  }
+}

@@ -1,0 +1,81 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>Flash</title>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>-->
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<body>
+<style>
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/*html, body{
+	margin: 0;
+	padding: 0;
+}*/
+</style>
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<!--script src="https://code.jquery.com/jquery-1.11.1.js"></script-->
+<script>
+/*var ready = false;
+
+function touchStarted(pq){
+	if(ready == false){
+		if(mouseX > (centerx - (ss/5))&&mouseX < (centerx + (ss/5))){
+			if(mouseY > (centery - (ss/10))&&mouseY < (centery + (ss/10))){
+				ready = true;
+				imready();
+				//fullscreen(true);
+			}
+		}
+	}
+	if(ready == false){
+		fill(0, 0, 255);
+		ellipse(mouseX, mouseY, ss/10, ss/10);
+		click(mouseX, mouseY);
+	}
+	if(mouseX > centerx){
+		touchstartx = mouseX;
+		touchstarty = mouseY;
+		touchwhich = pq.which;
+		//console.log(touchstartx + ", " + touchstarty);
+	}
+	return false;
+}*/
+function random(min, max){
+	numtoreturn = max - min;
+	numtoreturn = Math.random()*numtoreturn;
+	numtoreturn = Math.floor(numtoreturn);
+	numtoreturn = numtoreturn + min;
+	numtoreturn = Math.floor(numtoreturn);
+	//console.log(numtoreturn);
+	return numtoreturn;
+	//return Math.floor(Math.random()*(max-min))+min;
+}
+var socket = io();
+
+/*function imready(){
+	if(one == 1){
+		socket.emit('ready', mysid);
+		one = 2;
+	}
+}*/
+
+</script>
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="550" height="400" id="Second with character animations" align="middle">
+		<param name="allowScriptAccess" value="sameDomain" />
+		<param name="movie" value="Second with character animations.swf" />
+		<param name="quality" value="low" />
+		<!--param name="menu" value="false" /-->
+		<param name="bgcolor" value="#0099cc" />
+		<embed src="Second with character animations.swf" quality="low" bgcolor="#0099cc" width="550" height="400" name="Second with character animations" menu = "false" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+</body>
+</html>
